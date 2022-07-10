@@ -21,11 +21,11 @@ variable "AMIS" {
 }
 
 variable "PATH_TO_PRIVATE_KEY" {
-  default = "levelup_key4"
+  default = "levelup_key"
 }
 
 variable "PATH_TO_PUBLIC_KEY" {
-  default = "levelup_key4.pub"
+  default = "levelup_key.pub"
 }
 
 variable "INSTANCE_USERNAME" {
