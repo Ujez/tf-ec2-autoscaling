@@ -15,7 +15,7 @@ resource "aws_key_pair" "levelup_key" {
 #Autoscaling Group
 resource "aws_autoscaling_group" "levelup-autoscaling" {
   name                      = "levelup-autoscaling"
-  vpc_zone_identifier       = ["us-east-1b", "us-east-1a"]
+  vpc_zone_identifier       =  [aws_subnet.example1.id, aws_subnet.example2.id]
   launch_configuration      = aws_launch_configuration.levelup-launchconfig.name
   min_size                  = 1
   max_size                  = 2
